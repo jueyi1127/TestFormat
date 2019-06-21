@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1020"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "if [ &quot;${CONFIGURATION}&quot; = &quot;Debug&quot; ]; then&#10;&quot;${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat&quot; --disable unusedArguments,numberFormatting,redundantReturn,andOperator,anyObjectProtocol,trailingClosures,redundantFileprivate --ranges nospace --swiftversion &quot;5.0&quot; &quot;${SRCROOT}/TestFormat/&quot; &#10;&#10;echo &quot;format debug build swift code&quot;&#10;&#10;else&#10;&#10;echo &quot;Not Debug Env, skip format&quot;&#10;&#10;fi&#10;"
+               shellToInvoke = "/bin/sh">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "D63F3DE722BC656100D40DA9"
+                     BuildableName = "TestFormat.app"
+                     BlueprintName = "TestFormat"
+                     ReferencedContainer = "container:TestFormat.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D63F3DE722BC656100D40DA9"
+               BuildableName = "TestFormat.app"
+               BlueprintName = "TestFormat"
+               ReferencedContainer = "container:TestFormat.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D63F3DFB22BC656300D40DA9"
+               BuildableName = "TestFormatTests.xctest"
+               BlueprintName = "TestFormatTests"
+               ReferencedContainer = "container:TestFormat.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D63F3E0622BC656300D40DA9"
+               BuildableName = "TestFormatUITests.xctest"
+               BlueprintName = "TestFormatUITests"
+               ReferencedContainer = "container:TestFormat.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D63F3DE722BC656100D40DA9"
+            BuildableName = "TestFormat.app"
+            BlueprintName = "TestFormat"
+            ReferencedContainer = "container:TestFormat.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D63F3DE722BC656100D40DA9"
+            BuildableName = "TestFormat.app"
+            BlueprintName = "TestFormat"
+            ReferencedContainer = "container:TestFormat.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D63F3DE722BC656100D40DA9"
+            BuildableName = "TestFormat.app"
+            BlueprintName = "TestFormat"
+            ReferencedContainer = "container:TestFormat.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

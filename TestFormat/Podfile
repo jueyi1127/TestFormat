@@ -1,0 +1,7 @@
+platform :ios, "11.0"
+def app_pods
+pod 'SwiftFormat/CLI', '0.40.4'
+end
+target 'TestFormat' do
+    app_pods
+end
